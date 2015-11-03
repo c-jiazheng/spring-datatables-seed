@@ -21,7 +21,8 @@
 ## Reference
 
 * https://www.datatables.net/examples/basic_init/alt_pagination.html
+* http://docs.spring.io/spring-boot/docs/current/reference/html/howto-database-initialization.html
 
-## Read as a follow up of this exercise
+## Read as a follow up to this exercise
 
 * http://docs.spring.io/spring-boot/docs/1.2.7.RELEASE/reference/htmlsingle/#production-ready
