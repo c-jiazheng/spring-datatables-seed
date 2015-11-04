@@ -2,6 +2,10 @@
 
 ![Screenshot](/README/spring-datatables.png)
 
+```shell
+$ mvn spring-boot:run
+```
+
 * [http://localhost:8080/index.html](http://localhost:8080/index.html)
 * [http://localhost:8080/health](http://localhost:8080/health)
 * [http://localhost:8080/env](http://localhost:8080/env)

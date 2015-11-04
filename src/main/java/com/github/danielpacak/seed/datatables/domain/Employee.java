@@ -7,12 +7,13 @@ import java.util.Date;
 public class Employee {
 
   private Long id;
-  private String name;
+  private String firstName;
+  private String lastName;
   private String position;
   private String office;
   private Integer age;
   private Date startDate;
-  private BigDecimal annualGrossSalary;
+  private BigDecimal salary;
 
   public Long getId() {
     return id;
@@ -22,12 +23,20 @@ public class Employee {
     this.id = id;
   }
 
-  public String getName() {
-    return name;
+  public String getFirstName() {
+    return firstName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setFirstName(String firstName) {
+    this.firstName = firstName;
+  }
+
+  public String getLastName() {
+    return lastName;
+  }
+
+  public void setLastName(String lastName) {
+    this.lastName = lastName;
   }
 
   public String getPosition() {
@@ -62,12 +71,11 @@ public class Employee {
     this.startDate = startDate;
   }
 
-  public BigDecimal getAnnualGrossSalary() {
-    return annualGrossSalary;
+  public BigDecimal getSalary() {
+    return salary;
   }
 
-  public void setAnnualGrossSalary(BigDecimal annualGrossSalary) {
-    this.annualGrossSalary = annualGrossSalary;
+  public void setSalary(BigDecimal salary) {
+    this.salary = salary;
   }
-
 }

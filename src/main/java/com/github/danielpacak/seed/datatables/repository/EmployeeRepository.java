@@ -6,6 +6,8 @@ import java.util.List;
 
 public interface EmployeeRepository {
 
-  List<Employee> findAll();
+  List<Employee> findAll(int start, int length);
+
+  long countAll();
 
 }
