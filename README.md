@@ -18,7 +18,7 @@ $ mvn spring-boot:run
 
 ## Implementation
 
-### By an IT contractor (currently in this repo)
+### By an IT contractor (this repo)
 
 ```java
 package com.github.danielpacak.seed.datatables.controller;
@@ -53,9 +53,30 @@ public class EmployeesController {
 
 ```
 
-### By a student / stack overflow-er
+### By a student / stack overflow-er / an IT contractor who stopped reading Spring's docs in 2008
 
-TODO
+```java
+public class EmployeesController {
+
+  @Autowired
+  EmployeeRepository repository;
+
+  @RequestMapping(value = "/employees", method = RequestMethod.GET)
+  public
+  @ResponseBody
+  Map<String, Object> getEmployees(@RequestParam("start") int start,
+                                   @RequestParam("length") int length,
+                                   HttpServletRequest httpRequest) {
+    Map<String, Object> response = new HashMap<>();
+    response.put("draw", httpRequest.getParameter("draw"));
+    response.put("data", repository.findAll(start, length));
+    response.put("recordsTotal", repository.countAll());
+    response.put("recordsFiltered", repository.countAll());
+    return response;
+  }
+
+}
+```
 
 ## Notes
 
