@@ -12,4 +12,12 @@ INSERT INTO EMPLOYEE(ID, FIRST_NAME, LAST_NAME, POSITION, OFFICE, AGE, START_DAT
 (11, 'Jena', 'Gaines', 'Office Manager', 'London', 30, '2008-12-19', 90.560),
 (12, 'Quinn', 'Flynn', 'Support Lead', 'Edinburgh', 22, '2013-03-03', 342.000),
 (13, 'Charde', 'Marshall', 'Regional Director', 'San Francisco', 36, '2008-10-16', 470.600),
-(14, 'Haley', 'Kennedy', 'Senior Marketing Designer', 'London', 43, '2012-12-18', 313.500);
+(14, 'Haley', 'Kennedy', 'Senior Marketing Designer', 'London', 43, '2012-12-18', 313.500),
+(15, 'Tatyana', 'Fitzpatrick', 'Regional Director', 'London', 19,'2010-03-17', 385.750),
+(16, 'Michael', 'Silva', 'Marketing Designer', 'London', 66,'2012-11-27', 198.500),
+(17, 'Paul', 'Byrd', 'Chief Financial Officer (CFO)', 'New York', 64, '2010-06-09', 725.000),
+(18, 'Gloria', 'Little', 'Systems Administrator', 'New York', 59, '2009-04-10', 237.500),
+(19, 'Bradley', 'Greer', 'Software Engineer', 'London', 41, '2012-10-13', 132.000),
+(20, 'Dai', 'Rios', 'Personnel Lead', 'Edinburgh', 35, '2012-09-26', 217.500),
+(21, 'Jenette', 'Caldwell', 'Development Lead', 'New York', 30, '2011-09-03', 345.000),
+(22, 'Yuri', 'Berry', 'Chief Marketing Officer (CMO)', 'New York', 40, '2009-06-25', 675.000);
