@@ -1,5 +1,7 @@
 package com.github.danielpacak.seed.datatables.datatables;
 
+import java.util.Objects;
+
 public class DataTablesResponse<T> {
 
   private Integer draw;
@@ -47,4 +49,25 @@ public class DataTablesResponse<T> {
   public Long getRecordsFiltered() {
     return recordsFiltered;
   }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj) {
+      return true;
+    }
+    if (obj instanceof DataTablesResponse) {
+      DataTablesResponse<T> that = (DataTablesResponse<T>) obj;
+      return Objects.equals(this.draw, that.draw)
+        && Objects.equals(this.data, that.data)
+        && Objects.equals(this.recordsTotal, that.recordsTotal)
+        && Objects.equals(this.recordsFiltered, that.recordsFiltered);
+    }
+    return false;
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(this.draw, this.data, this.recordsTotal, this.recordsFiltered);
+  }
+
 }

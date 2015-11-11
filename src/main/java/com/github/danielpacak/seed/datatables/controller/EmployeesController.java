@@ -8,10 +8,11 @@ import com.github.danielpacak.seed.datatables.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
+
+import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Controller
 public class EmployeesController {
@@ -19,7 +20,7 @@ public class EmployeesController {
   @Autowired
   EmployeeService service;
 
-  @RequestMapping(value = "/employees", method = RequestMethod.GET)
+  @RequestMapping(value = "/employees", method = GET)
   public
   @ResponseBody
   DataTablesResponse<List<Employee>> getEmployees(@DataTablesRequestParams DataTablesRequest dataTablesRequest) {

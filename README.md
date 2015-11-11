@@ -1,5 +1,8 @@
 # Spring (4.x) MVC DataTables (1.10.x) Seed
 
+A seed project for [Spring MVC](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/mvc.html) with
+[DataTables](https://www.datatables.net) applications.
+
 ![Screenshot](/README/spring-datatables.png)
 
 ```shell

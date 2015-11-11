@@ -19,8 +19,8 @@ public class EmployeeService {
   EmployeeRepository repository;
 
   @Transactional
-  public DataTablesResponse<List<Employee>> findAll(DataTablesRequest dataTablesRequest) {
-    DataTablesResponse<List<Employee>> response = newDataTablesResponseFor(dataTablesRequest);
+  public DataTablesResponse<List<Employee>> findAll(final DataTablesRequest dataTablesRequest) {
+    final DataTablesResponse<List<Employee>> response = newDataTablesResponseFor(dataTablesRequest);
     response.setData(repository.findAll(dataTablesRequest));
     response.setRecordsTotal(repository.countAll(dataTablesRequest));
     response.setRecordsFiltered(repository.countAll(dataTablesRequest));
